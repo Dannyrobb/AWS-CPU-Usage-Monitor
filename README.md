@@ -6,7 +6,7 @@ AWS CPU Usage Monitor is a project designed to extract performance information f
 
 ## Components
 
-- **Frontend**: A web UI built with React, Material UI, and `react-charts` for visualizing CPU usage.
+- **Frontend**: A web UI built with React, Material UI, and react-charts for visualizing CPU usage.
 - **Backend**: A Fastify server that communicates with AWS CloudWatch to retrieve CPU usage metrics.
 
 ## Features
@@ -70,23 +70,16 @@ AWS CPU Usage Monitor is a project designed to extract performance information f
 
 ## Code Overview
 
-### Frontend
-
+### Main Frontend
 - **`Chart.tsx`**: Component for displaying CPU usage data using `react-charts`.
 - **`fetchCpuUsage.ts`**: Function to fetch CPU usage data from the backend API.
 - **`Main.tsx`**: Main React component managing state, fetching data, and rendering UI components.
 
-### Backend
-
+### Main Backend
 - **`server.ts`**: Fastify server setup and configuration.
 - **`awsConfig.ts`**: AWS CloudWatch and EC2 integration for fetching CPU usage data.
 - **`routes/AWSroutes.ts`**: Route handler for the AWS CPU usage API.
-
-## Project Structure
-
-- **`frontend/`**: Contains the React application and UI components.
-- **`server/`**: Contains the Fastify server and AWS integration code.
-- **`.env`**: Configuration file for environment variables.
+.
 
 ## Development
 
@@ -94,6 +87,9 @@ AWS CPU Usage Monitor is a project designed to extract performance information f
 - **TypeScript**: The project uses TypeScript for type safety and better development experience.
 
 ## Deployment
+
+The app is deployed here https://aws-client-xi.vercel.app/ , please allow a minute for the back-end server to wake up after making your first request.
+After that the app will run smoothly!
 
 Deploy the frontend and backend applications separately, or as a unified solution, depending on your infrastructure.
 
