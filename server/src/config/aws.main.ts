@@ -63,8 +63,7 @@ export async function getCpuUsage({
       );
       return JSON.stringify(organizedData, null, 2);
     } else {
-      return JSON.stringify({
-        error: 'We have encountered an error, please try submitting again',
+     throw new Error('We have encountered an error, please try submitting again');
       });
     }
   } catch (err) {
