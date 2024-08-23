@@ -93,10 +93,6 @@ After that the app will run smoothly!
 
 Deploy the frontend and backend applications separately, or as a unified solution, depending on your infrastructure.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgements
 
 Special thanks to the maintainers of the libraries and frameworks used in this project.
