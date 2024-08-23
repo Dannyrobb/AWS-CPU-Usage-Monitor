@@ -7,7 +7,6 @@ export const AWSendpoint = async (
 ) => {
   try {
   const awsRes = await getCpuUsage(request.query);
-
   reply.send(awsRes);
   } catch(error){
   reply.send(error)
