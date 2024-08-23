@@ -1,4 +1,4 @@
-# Faddom – AWS CPU Usage Monitor
+#  AWS CPU Usage Monitor
 
 ## Overview
 
