@@ -1,5 +1,5 @@
 import { Box, Typography, Paper } from "@mui/material";
-import welcomeMessages from "../assets/welcomeMessages.json"; // Adjust the path as needed
+import welcomeMessages from "../assets/welcomeMessages.json";
 
 function Welcome() {
   const BoxStyle = {
