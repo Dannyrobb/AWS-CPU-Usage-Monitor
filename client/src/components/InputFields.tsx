@@ -1,4 +1,5 @@
-import { TextField, Tooltip } from "@mui/material";
+import { TextField, Tooltip, Select, MenuItem } from "@mui/material";
+import intervals from "../assets/intervalForSelect.json";
 
 interface InputFieldsProps {
   ipAddress: string;
@@ -55,14 +56,13 @@ export function InputFields({
           onChange={(event) => setEndTime(event.target.value)}
         />
       </Tooltip>
-      <TextField
-        label="Interval (seconds)"
-        type="number"
-        variant="outlined"
-        value={interval}
-        sx={{ margin: 1 }}
-        onChange={(event) => setInterval(event.target.value)}
-      />
+      <Select value={interval} onChange={(event) => setInterval(event.target.value)} variant="outlined" sx={{ margin: 1, minWidth: 120 }}>
+        {intervals.map((value) => (
+          <MenuItem key={value.seconds} value={value.seconds}>
+            {value.seconds} seconds {value.label && `- ${value.label}`}
+          </MenuItem>
+        ))}
+      </Select>
     </>
   );
 }
